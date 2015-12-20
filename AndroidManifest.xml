@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ptit.amthuc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- de biet vi tri hien tai tren ban do -->
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.example.main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/restaurant_icon"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBar" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAWYB13MV5PQr3v564V24yRI36ZmSv9-jA" />
+
+        <activity
+            android:name="com.example.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.d11cnpm3.pikachuonline.Welcome"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name="com.example.main.ApplicationMain"
+            android:label="@string/title_activity_application" >
+        </activity>
+        <activity
+            android:name="com.user.infor.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.example.main.Chat"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity android:name="com.example.activity.OrderActivity" />
+        <activity android:name="com.example.activity.OrderDetailActivity" />
+        <activity
+            android:name="com.example.activity.TierActivity"
+            android:label="@string/title_activity_tier" />
+
+        <service
+            android:name="com.example.service.DemoService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.example.activity.ChefActivity"
+            android:label="@string/title_activity_chef" >
+        </activity>
+
+    </application>
+
+</manifest>

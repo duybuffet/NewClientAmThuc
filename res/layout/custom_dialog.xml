@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000" >
+    <TextView 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:textSize="24sp"
+   		android:layout_margin="10dp"
+   		android:gravity="center_horizontal"
+   		android:textColor="#ffffff"
+   		android:text="Thanh toán tiền mặt"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+
+		<TextView 
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	   		android:layout_height="wrap_content"
+	   		android:textSize="16sp"
+	   		android:textColor="#ffffff"
+	   		android:gravity="left|center_vertical"
+	   		android:paddingLeft="15sp"
+	   		android:lines="2"
+	   		android:text="Số tiền"/>
+
+	    <TextView
+	        android:id="@+id/tvPayDialogTotalToPay"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.25"
+	        android:paddingLeft="15dp"
+	        android:layout_marginRight="10dp"
+	        android:text=""
+	        android:textColor="@android:color/holo_red_light"
+	        android:textSize="16sp" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	   		android:layout_height="wrap_content"
+	   		android:textSize="16sp"
+	   		android:textColor="#ffffff"
+	   		android:gravity="left|center_vertical"
+	   		android:paddingLeft="15sp"
+	   		android:lines="2"
+	   		android:text="Khách đưa"/>
+	    <EditText 
+	        android:id="@+id/edPayDialogCustomerMoney"
+	        android:inputType="number"
+	        android:layout_width="0dp"
+	        android:layout_weight="1.25"
+	   		android:layout_height="30sp"
+	   		android:textSize="20sp"
+	   		android:layout_marginRight="10sp"
+	   		android:layout_marginLeft="10sp"
+	   		android:background="#ffffff"
+	   		android:text=""/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    <TextView 	        
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	   		android:layout_height="wrap_content"
+	   		android:textSize="16sp"
+	   		android:textColor="#ffffff"
+	   		android:gravity="left"
+	   		android:paddingLeft="15sp"
+	   		android:text="Trả lại"/>
+
+	    <TextView
+	        android:id="@+id/tvPayDialogChange"
+	        android:layout_width="0sp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.25"
+	        android:paddingLeft="15dp"
+	        android:layout_marginRight="10dp"
+	        android:text=""
+	        android:textColor="@android:color/holo_orange_dark"
+	        android:textSize="16sp" />
+
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    <LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:gravity="right"
+		    android:orientation="horizontal">
+		    <CheckBox 
+		        android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content"
+		   		android:textSize="16sp"
+		   		android:textColor="#ffffff"
+		   		android:layout_marginRight="20dp"
+		   		android:text="Thẻ NH"/>
+		</LinearLayout>
+	    <CheckBox 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	   		android:layout_height="wrap_content"
+	   		android:textSize="16sp"
+	   		android:textColor="#ffffff"
+	   		android:text="In hoá đơn"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/btnPayDialogPay"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	   		android:layout_height="50dp"
+	   		android:textSize="13sp"
+	   		android:textColor="#ffffff"
+	   		android:layout_marginLeft="10dp"
+	   		android:layout_marginRight="2dp"
+	   		android:gravity="center"	   		
+	   		android:text="Thanh toán"/>
+	    <Button 
+	        android:id="@+id/btnPayDialogCancel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	   		android:layout_height="50dp"
+	   		android:textSize="13sp"
+	   		android:textColor="#ffffff"
+	   		android:layout_marginRight="10dp"
+	   		android:layout_marginLeft="2dp"
+	   		android:text="Hủy"/>
+	</LinearLayout>
+</LinearLayout>

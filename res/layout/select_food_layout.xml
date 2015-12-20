@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="120dp"
+    	android:orientation="vertical"
+    	android:background="#9A9A9A">
+    	<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="65dp"
+	    	android:orientation="horizontal">
+	    	<ImageView 
+			    android:layout_width="50dp"
+	    		android:layout_height="50dp"
+	    		android:layout_margin="5dp"
+	    		android:background="@drawable/table_blue"/>
+	    	<LinearLayout 
+			    android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:padding="5dp"
+		    	android:orientation="vertical">
+		    	
+		        <TextView 
+		            android:id="@+id/tvOrderTableName"
+		            android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="18sp"
+		    		android:text="Bàn 1"
+		    		android:textColor="#ffffff"/>
+		        <TextView 
+		            android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="14sp"
+		    		android:text="Lượng món : 2 | 2 Phút"/>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="50dp"
+	    	android:orientation="horizontal"
+	    	android:gravity="right|center_vertical">
+		    <Button
+		        android:id="@+id/btn_change_table" 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Chuyển bàn"/>
+		    <Button 
+		        android:id="@+id/btn_destroy_table"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:textSize="14sp"
+	    		android:layout_height="fill_parent"
+	    		android:text="Huỷ bàn"/>
+		    <Button 
+		        android:id="@+id/btnCloseMenu"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Đóng menu"/>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="horizontal">
+	    <ListView 
+	        android:id="@+id/lvCategory"
+	        android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:background="#FFFDF7"
+		    android:divider="#FFFDF7"
+		    android:layout_weight="1"/>
+		<GridView
+		    android:id="@+id/grvDish"
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="3"
+		    android:background="#EEE4AF"
+		    android:padding="3dp"
+		    android:numColumns="2" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<LinearLayout android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="120dp"
+    	android:orientation="vertical"
+    	android:background="#9A9A9A">
+    	<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="65dp"
+	    	android:orientation="horizontal">
+	    	<ImageView 
+			    android:layout_width="50dp"
+	    		android:layout_height="50dp"
+	    		android:layout_margin="5dp"
+	    		android:background="@drawable/table_pink"/>
+	    	<LinearLayout 
+			    android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:padding="5dp"
+		    	android:orientation="vertical">
+		    	
+		        <TextView 
+		            android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="18sp"
+		    		android:text="Giao diện cho nhân viên bếp"
+		    		android:textColor="#ffffff"/>
+		        <TextView 
+		            android:id="@+id/tvChefDate"
+		            android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="14sp"
+		    		android:text="Ngày : 1/11/2015"/>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="50dp"
+	    	android:orientation="horizontal"
+	    	android:gravity="right|center_vertical">
+		    <Button 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Thông tin"/>
+		    
+		    <Button 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Lịch sử"/>
+		    <Button 
+		        android:id="@+id/btnChefReturn"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Trở lại"/>
+		</LinearLayout>
+	</LinearLayout>
+    <ListView
+        android:id="@+id/lvChefListOrderDetails" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+</LinearLayout>

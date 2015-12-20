@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="120dp"
+    	android:orientation="vertical"
+    	android:background="#9A9A9A">
+    	<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="65dp"
+	    	android:orientation="horizontal">
+	    	<ImageView 
+			    android:layout_width="50dp"
+	    		android:layout_height="50dp"
+	    		android:layout_margin="5dp"
+	    		android:background="@drawable/table_blue"/>
+	    	<LinearLayout 
+			    android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:padding="5dp"
+		    	android:orientation="vertical">
+		    	
+		        <TextView 
+		            android:id="@+id/tvOrderDetailsTableName"
+		            android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="18sp"
+		    		android:text="Bàn 1"
+		    		android:textColor="#ffffff"/>
+		        <TextView 
+		            android:id="@+id/tvOrderItemQtt"
+		            android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="14sp"
+		    		android:text="Lượng món : 0"/>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="50dp"
+	    	android:orientation="horizontal"
+	    	android:gravity="right|center_vertical">
+		    <Button 
+		        android:id="@+id/btnPay"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Thanh toán"/>
+		    
+		    <Button 
+		        android:id="@+id/btnOpenMenu"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Mở menu"/>
+		    <Button 
+		        android:id="@+id/btnBack"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+	    		android:layout_height="fill_parent"
+	    		android:textSize="14sp"
+	    		android:text="Trở lại"/>
+		</LinearLayout>
+	</LinearLayout>
+	<ListView 
+        android:id="@+id/lvOrderDetail"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#FFFDF7"
+	    android:divider="#FFFDF7"
+	    android:layout_weight="1"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="#9A9A9A">
+	    <TextView 
+	        android:id="@+id/tvItemsTotalPrice"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="Tiền món :0 VNĐ"
+	    	android:gravity="center_horizontal"/>
+	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <TextView 
+		        android:id="@+id/tvType"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		    	android:layout_height="wrap_content"
+		    	android:text="Phụ thu : 0"
+		    	android:paddingRight="10dp"
+		    	android:gravity="right"/>
+		    <TextView 
+		        android:id="@+id/tvPrice"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		    	android:layout_height="wrap_content"
+		    	android:paddingLeft="10dp"
+		    	android:text="Giảm giá : 0"
+		    	android:gravity="left"/>
+		</LinearLayout>
+	    <TextView 
+	        android:id="@+id/tvOrderTotal"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="@android:color/holo_red_dark"
+	    	android:textSize="18sp"
+	    	android:text="THÀNH TIỀN : 0 VNĐ"
+	    	android:gravity="center_horizontal"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal"
+    	android:gravity="right|center_vertical"
+    	android:background="#9A9A9A">
+	    <Button 
+	        android:id="@+id/btn_order"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+    		android:layout_height="fill_parent"
+    		android:textSize="14sp"
+    		android:text="Order"/>	    
+	    <Button 
+	        android:id="@+id/btn_destroy_order"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+    		android:layout_height="fill_parent"
+    		android:textSize="14sp"
+    		android:text="Huỷ Order"/>
+	</LinearLayout>
+</LinearLayout>
