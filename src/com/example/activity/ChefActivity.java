@@ -62,7 +62,7 @@ public class ChefActivity extends Activity implements OnItemClickListener {
 				// TODO Auto-generated method stub
 				while (true) {
 					try {
-						Thread.sleep(3000);
+						Thread.sleep(8000);
 						handler.post(new Runnable() {
 
 							@Override

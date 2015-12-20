@@ -51,5 +51,6 @@
     <string name="app_id">832629726831202</string>
     <string name="exception">Exception: %1$s</string>
     <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_notification_view">NotificationView</string>
 
 </resources>

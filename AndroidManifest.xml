@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="21" />
 
     <!-- de biet vi tri hien tai tren ban do -->
@@ -76,7 +76,14 @@
             android:name="com.example.activity.ChefActivity"
             android:label="@string/title_activity_chef" >
         </activity>
-
+        <activity
+            android:name=".NotificationView"
+            android:label="@string/title_activity_notification_view"
+            android:parentActivityName=".TierActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TierActivity" />
+        </activity>
     </application>
 
 </manifest>

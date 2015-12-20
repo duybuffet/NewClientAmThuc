@@ -102,7 +102,7 @@ public class OrderActivity extends Activity {
 			public void MessageReceived(String msg) {
 				// TODO Auto-generated method stub
 				ProcessMessage(msg);
-
+				TierActivity.silentService();
 			}
 
 			private void ProcessMessage(String msg) {

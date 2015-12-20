@@ -24,14 +24,11 @@ import com.google.gson.Gson;
 public class MainActivity extends Activity implements OnClickListener {
 	private Toast toast;
 	private static final String TAG = "SERVER MESSAGE";
-	private Intent intent;
 	private TCPClient mTcpClient;
 	private EditText editUsername, editPass;
 	private Button btnTest;
-	private Button btnNext;
 	private Handler handler;
 	private ProgressDialog progress;
-	private Context context;
 	private TextView textError;
 
 	@Override
@@ -177,13 +174,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		startActivity(i);
 		finish();
 	}
-
-	// @Override
-	// public boolean onKey(View v, int keyCode, KeyEvent event) {
-	// // TODO Auto-generated method stub
-	// btnTest.performClick();
-	// return false;
-	// }
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {

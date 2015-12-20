@@ -40,15 +40,13 @@ import com.google.gson.Gson;
 public class ApplicationMain extends Activity implements OnClickListener {
 	private TabHost tab;
 	private GestureDetector gDetect;
-	private ListView lvFriend, lvUsers;
+	private ListView lvUsers;
 	private Button btnProfile, btnOrder, btnLogout, btnHistory;
-	private SearchView svFriend, svPlayers;
 	private UserAdapter userAdapter;
 	private TCPClient mClient;
 	private String TAG = "Application Main Activity";
 	private Handler handler;
 	private ProgressDialog progress;
-	private ServiceManager mServiceManager;
 	public static int ACTIVITY_RESULT = 11;
 	public static List<Category> listCategory;
 	public static List<Table> listTable;
@@ -88,7 +86,6 @@ public class ApplicationMain extends Activity implements OnClickListener {
 		}
 		btnLogout = (Button) findViewById(R.id.btnLogout);
 		btnHistory = (Button) findViewById(R.id.btnHistory);
-		svPlayers = (SearchView) findViewById(R.id.searchViewPlayers);
 		btnProfile.setOnClickListener(this);
 		btnOrder.setOnClickListener(this);
 		btnLogout.setOnClickListener(this);
